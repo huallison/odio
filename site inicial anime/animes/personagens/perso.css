@@ -1,0 +1,146 @@
+body{
+    background-image: url("../../img/fundo3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.perfil{
+    background-color: #070d12;
+    width: 370px;
+    border: 3px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.perfil .info{
+
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil .info img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 2px solid #02d08f;
+}
+
+.perfil .info .nome{
+    font-size: 26px;
+}
+
+.perfil .info .cargo{
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+
+.perfil .conteudo{
+    margin-top: 15px;
+}
+
+.perfil .abas{
+    display: flex;
+
+}
+
+.perfil .abas .aba, .perfil .abas .aba2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0. 2s ease-in-out;
+}
+
+.perfil .aba img{
+    width: 20px;
+}
+
+.perfil .abas .aba.selecionado{
+    background-color: #262626;
+}
+
+.perfil .info-abas{
+    background-color: #262626;
+}
+
+.perfil .abas .aba:hover{
+    background-color: #414141;
+}
+
+.info-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.info-abas .informacao.selecionado{
+    display: block;
+}
+
+.info-abas .sub-titulo{
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.info-abas .descricao span{
+    color: #02d08f;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{
+    display: block;
+    width: 250px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0 0.3s ease-in-out;
+}
+
+.redes-sociais .fandom{
+    background-color: rgb(151, 15, 15);
+}
+
+.redes-sociais .wikipedia{
+    background-color: blueviolet;
+}
+
+.redes-sociais .m-livre{
+    background-color: rgb(201, 201, 41);
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
